@@ -10,7 +10,15 @@ public class UtilityClassObject {
   public static String name() {
     return "wonwoo;";
   }
+  public static UtilityClassObject of() {
+    return new UtilityClassObject();
+  }
+
+  public static void main(String[] args) {
+    of();
+  }
 }
+
 
 class UtilityClassObjectNot {
   private UtilityClassObjectNot() {
